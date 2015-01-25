@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="25dp"
+            android:id="@+id/buttonActualites"
+            android:text="Actualites"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:drawableTop="@drawable/ic_news"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#80F5D76E" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="25dp"
+            android:text="Eco-Campus"
+            android:textStyle="bold"
+            android:id="@+id/buttonEcoCampus"
+            android:textColor="@android:color/white"
+            android:drawableTop="@drawable/ic_eco"
+            android:background="#802ECC71"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="2dp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Site UFC"
+                android:textStyle="bold"
+                android:id="@+id/buttonUniversite"
+                android:textColor="@android:color/white"
+                android:drawableStart="@drawable/bouton_universite"
+                android:maxLines="2"
+                android:minLines="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:alpha="1"
+                android:background="#80674172" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Site IUT"
+                android:id="@+id/buttonIUT"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/bouton_iut"
+                android:minLines="1"
+                android:maxLines="2"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#8096281B" />
+
+            </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:id="@+id/linear_layout_edt"
+             android:layout_weight="1"
+             android:layout_marginLeft="2dp"
+             android:layout_marginTop="2dp"
+             android:layout_marginRight="4dp"
+             android:layout_marginBottom="2dp"
+             android:background="#B359ABE3"
+             android:alpha="1">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Mon emploi du temps"
+                 android:layout_gravity="center_horizontal"
+                 android:gravity="center_horizontal"
+                 android:textSize="16dp"
+                 android:textStyle="bold"
+                 android:paddingLeft="30dp"
+                 android:paddingRight="30dp"
+                 android:layout_marginLeft="2dp"
+                 android:textColor="@android:color/white"
+                 android:layout_marginTop="2dp"
+                 android:layout_marginRight="4dp"
+                 android:layout_marginBottom="2dp" />
+
+             <ImageView
+                 android:layout_width="120dp"
+                 android:layout_height="120dp"
+                 android:layout_gravity="center_horizontal"
+                 android:paddingLeft="20dp"
+                 android:src="@drawable/ic_edt"
+                 android:alpha="0.5"/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center_horizontal"
+                 android:gravity="center"
+                 android:paddingLeft="20dp"
+                 android:paddingRight="20dp"
+                 android:id="@+id/liveEDT"
+                 android:textColor="@android:color/white"
+                 android:layout_weight="1"
+                 android:background="#80446CB3"
+                 android:alpha="1" />
+
+         </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Facebook"
+            android:textStyle="bold"
+            android:id="@+id/buttonFacebook"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/bouton_facebook"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="#803A539B" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Formations"
+                android:textStyle="bold"
+                android:id="@+id/buttonFormations"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/bouton_formations"
+                android:drawablePadding= "-10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="4dp"
+                android:background="#8022313F" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Agenda"
+                android:textStyle="bold"
+                android:id="@+id/buttonAgenda"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/bouton_agenda"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#8022313F" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

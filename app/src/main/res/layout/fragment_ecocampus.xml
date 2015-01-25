@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollViewEco">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="| Projet Éco-campus 2020 |"
+                android:id="@+id/textView2"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:background="#971354" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Fédérons les énergies pour construire demain !"
+                android:id="@+id/textView"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:background="#971354" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Partenaires :"
+                android:id="@+id/textView3"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:background="#971354" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/partenaires_eco"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="L’avenir des campus belfortains"
+                android:id="@+id/textView4"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:background="#971354" />
+
+            <WebView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/webViewEcoPart1" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Des campus thématiques"
+                android:id="@+id/textView11"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:background="#971354" />
+
+            <WebView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/webViewEcoPart2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="De nouveaux échanges"
+                android:id="@+id/textView15"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:background="#971354" />
+
+            <WebView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/webViewEcoPart3" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Contact :"
+                android:id="@+id/textView18"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:background="#971354" />
+
+            <WebView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/webViewEcoPart4" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
