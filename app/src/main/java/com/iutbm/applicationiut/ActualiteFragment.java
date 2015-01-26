@@ -153,7 +153,9 @@ public class ActualiteFragment extends Fragment {
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction ft = fragmentManager.beginTransaction();
                 ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                ft.replace(R.id.container, new ContenuActuFragment(actualite)).addToBackStack("retour9").commit();
+                ContenuActuFragment contactu =new ContenuActuFragment();
+                contactu.setActu(actualite);
+                ft.replace(R.id.container, contactu).addToBackStack("retour9").commit();
             } else {
                 if(actualite.getResume().contains("http")) {
                     String link = actualite.getResume().substring(actualite.getResume().indexOf("http"));

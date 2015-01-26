@@ -14,14 +14,23 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class ContenuActuFragment extends Fragment {
-    private Actualite actualite;
+    private Actualite actualite = null ;
     private TextView titre;
     private WebView contenu;
     private TextView date;
 
-    public ContenuActuFragment(Actualite actualite) {
+    public ContenuActuFragment(){
+        // ce qui suit ne devraitpas être développé comme cela: normalement
+        // les fragment sont toujours construits sans paramètres
+
+    }
+
+
+
+    public void setActu(Actualite actualite) {
         this.actualite = actualite;
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

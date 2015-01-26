@@ -73,40 +73,48 @@ public class LicenceFragment extends Fragment {
             FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction ft = fragmentManager.beginTransaction();
             if (position != 0) {
+                LPDetailleFragment lpd = new LPDetailleFragment();
                 switch (position) {
                     case 1:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("ASS_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("ASS_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 2:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("CTPEB_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("CTPEB_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 3:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("ENR_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("ENR_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 4:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("FVPI_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("FVPI_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 5:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("VEGA_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("VEGA_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 6:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("TIC_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("TIC_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 7:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("TEPROW_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("TEPROW_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                 }
@@ -126,25 +134,30 @@ public class LicenceFragment extends Fragment {
             FragmentTransaction ft = fragmentManager.beginTransaction();
             AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
             if (position != 0) {
+                LPDetailleFragment lpd = new LPDetailleFragment();
                 switch (position) {
                     case 1:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("ASS_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("ASS_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPMontbelliard.setSelection(0);
                         break;
                     case 2:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("CIM_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("CIM_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPMontbelliard.setSelection(0);
                         break;
                     case 3:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("CART_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("CART_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPMontbelliard.setSelection(0);
                         break;
                     case 4:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("DORA_LP")).addToBackStack("retour20").commit();
+                        lpd.setIdFormation("DORA_LP");
+                        ft.replace(R.id.container, lpd).addToBackStack("retour20").commit();
                         listLPMontbelliard.setSelection(0);
                         break;
                     case 5:

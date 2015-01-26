@@ -2,53 +2,53 @@
 <items version="2" >
 
     <item
-        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/libs/joda-time-2.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="56498efd17752898cfcc3868c1b6211a07b12b8f">
-        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/joda-time-2.3-02358be222156770c8d60133287bd8ffb30d5857.jar" />
-    </item>
-    <item
-        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/classes-4c9781070efac25202e7e8077804724c2d020a6f.jar" />
-    </item>
-    <item
-        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/classes-04242034e05080a440da0f49e3bae5b39d516eb7.jar" />
-    </item>
-    <item
-        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-23adeba027c8831a6978219b727ba6923d2e045e.jar" />
-    </item>
-    <item
-        jar="/Users/romain/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="/home/couchot/Tool/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-dcf0df9d5617bd794f8afd30a56b4e193e0efa54.jar" />
+        <dex dex="/home/couchot/enseignement/android/ApplicationIUT/app/build/intermediates/pre-dexed/release/support-annotations-21.0.3-b16c22620aa539b88605ee6229e8c3bf3e5d24f1.jar" />
     </item>
     <item
-        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/libs/bugsense-3.6.jar"
+        jar="/home/couchot/enseignement/android/ApplicationIUT/app/libs/bugsense-3.6.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="3928cf9ff54683b522cee09da9034106c53fea91">
-        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/bugsense-3.6-2d8e8e8c5633b3da062d53dd894ec67ca022a23c.jar" />
+        <dex dex="/home/couchot/enseignement/android/ApplicationIUT/app/build/intermediates/pre-dexed/release/bugsense-3.6-422031051b57bd25a3979971e0d6944280c4bac2.jar" />
     </item>
     <item
-        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/libs/jsoup-1.7.3.jar"
+        jar="/home/couchot/enseignement/android/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/couchot/enseignement/android/ApplicationIUT/app/build/intermediates/pre-dexed/release/internal_impl-21.0.3-4b004b150d55519809e3984408b6c651ad85ccca.jar" />
+    </item>
+    <item
+        jar="/home/couchot/enseignement/android/ApplicationIUT/app/libs/joda-time-2.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="56498efd17752898cfcc3868c1b6211a07b12b8f">
+        <dex dex="/home/couchot/enseignement/android/ApplicationIUT/app/build/intermediates/pre-dexed/release/joda-time-2.3-39b66b9aea4b0291b23b724cd98e799c40b23dd8.jar" />
+    </item>
+    <item
+        jar="/home/couchot/enseignement/android/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/couchot/enseignement/android/ApplicationIUT/app/build/intermediates/pre-dexed/release/classes-1bbcb5ffecab0b9d16f2fa666eadc52a58c507aa.jar" />
+    </item>
+    <item
+        jar="/home/couchot/enseignement/android/ApplicationIUT/app/libs/jsoup-1.7.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="ab1f22cadc2f8b514e55ba368f5128056fe304da">
-        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/jsoup-1.7.3-61fd7964c142a7dbaa24725a58700cbf8e6be60b.jar" />
+        <dex dex="/home/couchot/enseignement/android/ApplicationIUT/app/build/intermediates/pre-dexed/release/jsoup-1.7.3-390002c32f8768c41170ddf016ae6177e1719c14.jar" />
+    </item>
+    <item
+        jar="/home/couchot/enseignement/android/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/couchot/enseignement/android/ApplicationIUT/app/build/intermediates/pre-dexed/release/classes-f2c5b0c67bf2e75aa891561e1dfa335000f6a8ac.jar" />
     </item>
 
 </items>
