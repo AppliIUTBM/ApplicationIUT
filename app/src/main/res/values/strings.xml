@@ -12,26 +12,26 @@
 
     <string-array name="nav_drawer_items">
         <item>Accueil</item>
+        <item>Emploi du temps</item>
         <item>Actualités</item>
-        <item>Formations</item>
         <item>Eco-Campus</item>
-        <item>Agenda</item>
-        <item>Facebook</item>
-        <item>Twitter</item>
-        <item>IUT</item>
         <item>UFC</item>
+        <item>IUT</item>
+        <item>Facebook</item>
+        <item>Formations</item>
+        <item>Agenda</item>
     </string-array>
 
     <array name="nav_drawer_icons">
         <item>@drawable/ic_accueil</item>
+        <item>@drawable/ic_edt</item>
         <item>@drawable/ic_news</item>
-        <item>@drawable/ic_formations</item>
         <item>@drawable/ic_eco</item>
-        <item>@drawable/ic_agenda</item>
-        <item>@drawable/ic_facebook</item>
-        <item>@drawable/ic_twitter</item>
-        <item>@drawable/ic_iut</item>
         <item>@drawable/ic_universite</item>
+        <item>@drawable/ic_iut</item>
+        <item>@drawable/ic_facebook</item>
+        <item>@drawable/ic_formations</item>
+        <item>@drawable/ic_agenda</item>
     </array>
 
     <string-array name="ASS_DUT">

@@ -33,10 +33,9 @@ public class LPDetailleFragment extends Fragment {
     private LinearLayout layout;
     private Animation vanish;
 
-    public void setIdFormation(String idFormation) {
+    public LPDetailleFragment(String idFormation) {
         this.idFormation = idFormation;
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

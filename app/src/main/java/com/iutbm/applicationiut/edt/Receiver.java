@@ -3,6 +3,7 @@ package com.iutbm.applicationiut.edt;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 
 import com.iutbm.applicationiut.EDTActivity;
 

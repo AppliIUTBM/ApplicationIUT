@@ -26,14 +26,14 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private final int section_accueil = 0;
-    private final int section_actualites = 1;
-    private final int section_formations = 2;
+    private final int section_edt = 1;
+    private final int section_actualites = 2;
     private final int section_ecocampus = 3;
-    private final int section_agenda = 4;
-    private final int section_facebook = 5;
-    private final int section_twitter = 6;
-    private final int section_iut = 7;
-    private final int section_universite = 8;
+    private final int section_universite = 4;
+    private final int section_iut = 5;
+    private final int section_facebook = 6;
+    private final int section_formations = 7;
+    private final int section_agenda = 8;
     /**
      * The id used to identifiy the robodemo "instance" related to this activity.
      */
@@ -104,8 +104,9 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
             case section_facebook:
                 ft.replace(R.id.container, new FacebookFragment()).addToBackStack("retour6").commit();
                 break;
-            case section_twitter:
-                ft.replace(R.id.container, new TwitterFragment()).addToBackStack("retour7").commit();
+            case section_edt:
+                Intent intent = new Intent(getApplicationContext(),EDTActivity.class);
+                startActivity(intent);
                 break;
             case section_iut:
                 Intent toIut = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.iut-bm.univ-fcomte.fr/‎"));

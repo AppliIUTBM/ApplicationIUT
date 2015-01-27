@@ -80,54 +80,45 @@ public class DUTFragment extends Fragment {
             FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction ft = fragmentManager.beginTransaction();
             if (position != 0) {
-                DUTDetailleFragment ddut = new DUTDetailleFragment();
                 switch (position) {
                     case 1:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ddut.setIdFormation("ASS_DUT");
-                        ft.replace(R.id.container, ddut).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new DUTDetailleFragment("ASS_DUT")).addToBackStack("retour20").commit();
                         listDUTBelfort.setSelection(0);
                         break;
                     case 2:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ddut.setIdFormation("GU_DUT");
-                        ft.replace(R.id.container, ddut).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new DUTDetailleFragment("GU_DUT")).addToBackStack("retour20").commit();
                         listDUTBelfort.setSelection(0);
                         break;
                     case 3:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ddut.setIdFormation("SAP_DUT");
-                        ft.replace(R.id.container, ddut).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new DUTDetailleFragment("SAP_DUT")).addToBackStack("retour20").commit();
                         listDUTBelfort.setSelection(0);
                         break;
                     case 4:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ddut.setIdFormation("G2CD_DUT");
-                        ft.replace(R.id.container, ddut).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new DUTDetailleFragment("G2CD_DUT")).addToBackStack("retour20").commit();
                         listDUTBelfort.setSelection(0);
                         break;
                     case 5:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ddut.setIdFormation("GEII_DUT");
-                        ft.replace(R.id.container, ddut).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new DUTDetailleFragment("GEII_DUT")).addToBackStack("retour20").commit();
                         listDUTBelfort.setSelection(0);
                         break;
                     case 6:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ddut.setIdFormation("GTA_DUT");
-                        ft.replace(R.id.container, ddut).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new DUTDetailleFragment("GTE_DUT")).addToBackStack("retour20").commit();
                         listDUTBelfort.setSelection(0);
                         break;
                     case 7:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ddut.setIdFormation("INFO_DUT");
-                        ft.replace(R.id.container, ddut).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new DUTDetailleFragment("INFO_DUT")).addToBackStack("retour20").commit();
                         listDUTBelfort.setSelection(0);
                         break;
                     case 8:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ddut.setIdFormation("TDC_DUT");
-                        ft.replace(R.id.container, ddut).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new DUTDetailleFragment("TDC_DUT")).addToBackStack("retour20").commit();
                         listDUTBelfort.setSelection(0);
                         break;
                 }
@@ -169,9 +160,7 @@ public class DUTFragment extends Fragment {
                         break;
                     case 2:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        DUTDetailleFragment ddut = new DUTDetailleFragment();
-                        ddut.setIdFormation("MP_DUT");
-                        ft.replace(R.id.container, ddut).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new DUTDetailleFragment("MP_DUT")).addToBackStack("retour20").commit();
                         listDUTMontbelliard.setSelection(0);
                         break;
                     case 3:

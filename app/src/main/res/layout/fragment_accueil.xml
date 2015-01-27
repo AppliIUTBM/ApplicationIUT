@@ -103,8 +103,7 @@
              android:layout_marginTop="2dp"
              android:layout_marginRight="4dp"
              android:layout_marginBottom="2dp"
-             android:background="#B359ABE3"
-             android:alpha="1">
+             android:background="#B359ABE3">
 
              <TextView
                  android:layout_width="match_parent"
@@ -112,36 +111,34 @@
                  android:text="Mon emploi du temps"
                  android:layout_gravity="center_horizontal"
                  android:gravity="center_horizontal"
-                 android:textSize="16dp"
+                 android:textSize="18dp"
                  android:textStyle="bold"
-                 android:paddingLeft="30dp"
-                 android:paddingRight="30dp"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
                  android:layout_marginLeft="2dp"
                  android:textColor="@android:color/white"
-                 android:layout_marginTop="2dp"
+                 android:layout_marginTop="20dp"
                  android:layout_marginRight="4dp"
-                 android:layout_marginBottom="2dp" />
+                 android:layout_marginBottom="2dp"/>
 
              <ImageView
-                 android:layout_width="120dp"
-                 android:layout_height="120dp"
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
                  android:layout_gravity="center_horizontal"
                  android:paddingLeft="20dp"
-                 android:src="@drawable/ic_edt"
-                 android:alpha="0.5"/>
+                 android:src="@drawable/ic_edt"/>
 
              <TextView
                  android:layout_width="match_parent"
                  android:layout_height="match_parent"
                  android:layout_gravity="center_horizontal"
                  android:gravity="center"
-                 android:paddingLeft="20dp"
-                 android:paddingRight="20dp"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
                  android:id="@+id/liveEDT"
                  android:textColor="@android:color/white"
                  android:layout_weight="1"
-                 android:background="#80446CB3"
-                 android:alpha="1" />
+                 android:background="#80446CB3"/>
 
          </LinearLayout>
         </LinearLayout>

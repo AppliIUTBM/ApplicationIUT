@@ -24,9 +24,10 @@ public class DUTDetailleFragment extends Fragment {
     private WebView insertionFormation;
     private WebView poursuiteFormation;
 
-    public void setIdFormation(String idFormation) {
+    public DUTDetailleFragment(String idFormation) {
         this.idFormation = idFormation;
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_dut_detaille, container, false);

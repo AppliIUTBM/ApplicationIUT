@@ -16,6 +16,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.iutbm.applicationiut.edt.Backup;
 
@@ -45,7 +46,7 @@ public class AccueilFragment extends Fragment {
     int semaine = 1;
     String url = "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id="+String.valueOf(id)+"&jours="+String.valueOf(semaine);
     String contener;
-    String regEx = "(\\w{2}\\s\\d+\\s\\w{3}\\s[\\d\\w[-]]+\\s[\\w\\s[/]]+[(][\\w\\s[.]]+[-]\\s[\\d\\s\\w[']]+[)])";
+    String regEx = "(\\w{2}\\s\\d+\\s\\w{3}\\s[\\d\\w[-]]+\\s[\\d\\w\\s[/][-][.][']]+[(][\\w\\s[.]]+[-]\\s[\\d\\s\\w[']]+[)])";
     Matcher matcher;
     String current;
 
@@ -73,19 +74,23 @@ public class AccueilFragment extends Fragment {
         buttonFacebook.setOnClickListener(toFacebook);
         linearLayoutEDT.setOnClickListener(toEDT);
 
+        return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         Backup backup = new Backup(this.getActivity());
         id = backup.readData();
         url = "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id="+String.valueOf(id)+"&jours="+String.valueOf(semaine);
-
         new loadPage().execute();
-
-        return view;
     }
 
     private class loadPage extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected Void doInBackground(Void... params) {
+            Log.v("IUT",url);
             try {
                 document = Jsoup.connect(url).get();
                 contener = document.body().text();
@@ -102,11 +107,16 @@ public class AccueilFragment extends Fragment {
         }
 
         protected void onPostExecute(Void result){
-            textView.setText(current);
+            if(current==null)
+                textView.setText("Vous n'avez pas cours actuellement");
+            else
+                textView.setText(current);
         }
     }
 
     public void checkJour(String line){
+
+        Log.v("IUT",line);
 
         if(Character.isDigit(line.charAt(4)))
             checkHeure(line.substring(10));
