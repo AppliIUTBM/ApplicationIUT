@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="grayTransparent" type="color">#80222222</item>
+    <color name="grayTransparent">#80222222</color>
+    <color name="darkPurple">#674172</color>
+    <color name="lightPurple">#805990</color>
 </resources>
