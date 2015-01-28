@@ -69,6 +69,7 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
                 currentID = tabID[groupPosition][childPosition];
                 backup.saveData(currentID);
                 Toast.makeText(activity,"Formation sauvegardée avec succès",Toast.LENGTH_SHORT).show();
+                Log.v("IUT", String.valueOf(currentID));
             }
         });
         return convertView;

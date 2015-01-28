@@ -2,6 +2,7 @@ package com.iutbm.applicationiut.edt;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -19,47 +20,35 @@ import java.io.IOException;
  */
 public class Backup {
 
-    private Activity activity;
-    private String filename;
+    private final String KEY_ID = "ID_FORMATION";
+
+    private Context context;
+    private SharedPreferences myPreferences;
 
     public Backup(Activity mainActivity){
-        this.activity = mainActivity;
-        this.filename = "dataUser";
+        this.context = mainActivity;
+        this.myPreferences = mainActivity.getSharedPreferences("FORMATION_ETUDIANT",Context.MODE_PRIVATE);
     }
 
     public void saveData(int id){
-        FileOutputStream outputStream;
-        File file = new File(activity.getFilesDir(),filename);
 
-        try {
-            outputStream = activity.openFileOutput(filename,Context.MODE_PRIVATE);
-            outputStream.write(String.valueOf(id).getBytes());
-            outputStream.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Log.v("IUT", "writting "+id);
+
+        SharedPreferences.Editor editor = this.myPreferences.edit();
+        editor.putInt(KEY_ID,id);
+        editor.commit();
     }
 
     public int readData(){
-        int id = 0;
 
-        FileInputStream inputStream;
-        byte[] buffer = new byte[4];
+        int defaultValue = 0;
 
-        try {
-            inputStream = activity.openFileInput(filename);
-            inputStream.read(buffer);
-            inputStream.close();
-            id = Integer.parseInt(new String(buffer,"UTF-8"));
-            Log.v("IUT",String.valueOf(id));
-        } catch (FileNotFoundException e) {
-            Toast.makeText(this.activity,"Vous n'avez pas encore configuré votre emploi du temps",Toast.LENGTH_LONG).show();
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        int id = this.myPreferences.getInt(KEY_ID,defaultValue);
+
+        Log.v("IUT", id+" readed");
+
+        if (id==defaultValue)
+            Toast.makeText(context,"Veuillez choisir votre formation",Toast.LENGTH_LONG).show();
 
         return id;
     }

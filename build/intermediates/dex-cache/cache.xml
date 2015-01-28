@@ -2,53 +2,53 @@
 <items version="2" >
 
     <item
-        jar="/home/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/home/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/classes-b7178e9d3dff7e36a7649595104b8f02e43d089c.jar" />
-    </item>
-    <item
-        jar="/home/romain/AndroidStudioProjects/ApplicationIUT/app/libs/bugsense-3.6.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3928cf9ff54683b522cee09da9034106c53fea91">
-        <dex dex="/home/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/bugsense-3.6-ca684d99d37d2bc63e9eb25c4c5fa731c299cdf7.jar" />
-    </item>
-    <item
-        jar="/home/romain/AndroidStudioProjects/ApplicationIUT/app/libs/jsoup-1.7.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ab1f22cadc2f8b514e55ba368f5128056fe304da">
-        <dex dex="/home/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/jsoup-1.7.3-e8aaf72930b8160f2e5cbc71024cb88483f5c978.jar" />
-    </item>
-    <item
-        jar="/home/romain/AndroidStudioProjects/ApplicationIUT/app/libs/joda-time-2.3.jar"
+        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/libs/joda-time-2.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="56498efd17752898cfcc3868c1b6211a07b12b8f">
-        <dex dex="/home/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/joda-time-2.3-ecb63f2af016370acc4c64302d8fc0d8eb501fd9.jar" />
+        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/joda-time-2.3-02358be222156770c8d60133287bd8ffb30d5857.jar" />
     </item>
     <item
-        jar="/home/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/home/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/classes-161722c48a3d6b7342e219310a06b4ad4fdaf8aa.jar" />
+        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/classes-4c9781070efac25202e7e8077804724c2d020a6f.jar" />
     </item>
     <item
-        jar="/home/romain/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/home/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-0fd8d283de2cf139a79afc5b7ddb0c356dd1bd88.jar" />
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/classes-04242034e05080a440da0f49e3bae5b39d516eb7.jar" />
     </item>
     <item
-        jar="/home/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/home/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-96dc55433310e174ca7d510043c19df524bf5544.jar" />
+        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-23adeba027c8831a6978219b727ba6923d2e045e.jar" />
+    </item>
+    <item
+        jar="/Users/romain/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-dcf0df9d5617bd794f8afd30a56b4e193e0efa54.jar" />
+    </item>
+    <item
+        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/libs/bugsense-3.6.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3928cf9ff54683b522cee09da9034106c53fea91">
+        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/bugsense-3.6-2d8e8e8c5633b3da062d53dd894ec67ca022a23c.jar" />
+    </item>
+    <item
+        jar="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/libs/jsoup-1.7.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ab1f22cadc2f8b514e55ba368f5128056fe304da">
+        <dex dex="/Users/romain/AndroidStudioProjects/ApplicationIUT/app/build/intermediates/pre-dexed/debug/jsoup-1.7.3-61fd7964c142a7dbaa24725a58700cbf8e6be60b.jar" />
     </item>
 
 </items>
