@@ -76,37 +76,37 @@ public class LicenceFragment extends Fragment {
                 switch (position) {
                     case 1:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("ASS_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("ASS_LP")).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 2:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("CTPEB_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("CTPEB_LP")).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 3:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("ENR_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("ENR_LP")).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 4:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("FVPI_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("FVPI_LP")).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 5:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("VEGA_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("VEGA_LP")).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 6:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("TIC_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("TIC_LP")).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                     case 7:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("TEPROW_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("TEPROW_LP")).addToBackStack("retour20").commit();
                         listLPBelfort.setSelection(0);
                         break;
                 }
@@ -129,22 +129,22 @@ public class LicenceFragment extends Fragment {
                 switch (position) {
                     case 1:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("ASS_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("ASS_LP")).addToBackStack("retour20").commit();
                         listLPMontbelliard.setSelection(0);
                         break;
                     case 2:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("CIM_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("CIM_LP")).addToBackStack("retour20").commit();
                         listLPMontbelliard.setSelection(0);
                         break;
                     case 3:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("CART_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("CART_LP")).addToBackStack("retour20").commit();
                         listLPMontbelliard.setSelection(0);
                         break;
                     case 4:
                         ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                        ft.replace(R.id.container, new LPDetailleFragment("DORA_LP")).addToBackStack("retour20").commit();
+                        ft.replace(R.id.container, new LPDetailleFragment().setIdForamtion("DORA_LP")).addToBackStack("retour20").commit();
                         listLPMontbelliard.setSelection(0);
                         break;
                     case 5:

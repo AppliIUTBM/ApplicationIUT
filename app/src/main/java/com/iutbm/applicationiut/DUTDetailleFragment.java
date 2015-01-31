@@ -24,8 +24,9 @@ public class DUTDetailleFragment extends Fragment {
     private WebView insertionFormation;
     private WebView poursuiteFormation;
 
-    public DUTDetailleFragment(String idFormation) {
+    public DUTDetailleFragment setIdFormation(String idFormation) {
         this.idFormation = idFormation;
+        return this;
     }
 
     @Override

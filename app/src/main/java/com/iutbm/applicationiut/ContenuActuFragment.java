@@ -19,8 +19,9 @@ public class ContenuActuFragment extends Fragment {
     private WebView contenu;
     private TextView date;
 
-    public ContenuActuFragment(Actualite actualite) {
+    public ContenuActuFragment setActualite(Actualite actualite) {
         this.actualite = actualite;
+        return  this;
     }
 
     @Override
