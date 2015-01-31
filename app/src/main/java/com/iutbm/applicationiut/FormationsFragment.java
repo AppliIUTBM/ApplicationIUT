@@ -108,7 +108,7 @@ public class FormationsFragment extends Fragment {
                     FragmentManager fragmentManager = getFragmentManager();
                     FragmentTransaction ft = fragmentManager.beginTransaction();
                     ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                    ft.replace(R.id.container, new PlanFragment()).addToBackStack("retour17").commit();
+                    ft.replace(R.id.container, new MapsFragment()).addToBackStack("retour17").commit();
                 }
             }, vanish.getDuration());
 

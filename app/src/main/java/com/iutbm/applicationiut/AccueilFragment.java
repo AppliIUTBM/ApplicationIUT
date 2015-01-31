@@ -210,7 +210,7 @@ public class AccueilFragment extends Fragment {
             buttonIUT.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent toIut = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.iut-bm.univ-fcomte.fr/‎"));
+                    Intent toIut = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.iut-bm.univ-fcomte.fr"));
                     startActivity(toIut);
                 }
             }, vanish.getDuration());
@@ -225,7 +225,7 @@ public class AccueilFragment extends Fragment {
             buttonUniversite.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent toUniversite = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.univ-fcomte.fr/"));
+                    Intent toUniversite = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.univ-fcomte.fr"));
                     startActivity(toUniversite);
                 }
             }, vanish.getDuration());
