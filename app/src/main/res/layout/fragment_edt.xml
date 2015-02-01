@@ -1,43 +1,18 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:id="@+id/relative_layout_master"
-    android:background="@drawable/background">
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Semaine précédente"
-        android:id="@+id/button_semaine_precedente"
-        android:layout_alignParentLeft="true"
-        android:textColor="@android:color/white"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Semaine suivante"
-        android:id="@+id/button_semaine_suivante"
-        android:layout_alignParentRight="true"
-        android:textColor="@android:color/white"/>
-
-    <ScrollView
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button_semaine_precedente">
+        android:layout_height="match_parent"
+        android:id="@+id/ll_edt"
+        android:layout_marginTop="@dimen/small_padding"
+        android:paddingBottom="@dimen/large_padding">
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/table_layout"
-            android:shrinkColumns="0"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+    </LinearLayout>
 
-        </TableLayout>
-
-    </ScrollView>
-
-</RelativeLayout>
+</ScrollView>

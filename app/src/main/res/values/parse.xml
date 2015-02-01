@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data_parse_edt">
+        <item>https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=%1$d&amp;jours=%2$d</item>
+        <item>(\\w{2}\\s\\d+\\s\\w{3}\\s[\\d\\w[-]]+\\s[\\d\\w\\s[/][-][.][\']]+[(][\\w\\s[.]]+[-]\\s[\\d\\s\\w[\']]+[)])</item>
+        <item>INTENT_EDT_%1$d</item>
+    </string-array>
+
+    <string name="key_result">RESULT_LIST</string>
+</resources>

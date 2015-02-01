@@ -105,8 +105,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
                 ft.replace(R.id.container, new FacebookFragment()).addToBackStack("retour6").commit();
                 break;
             case section_edt:
-                Intent intent = new Intent(getApplicationContext(),EDTActivity.class);
-                startActivity(intent);
+                ft.replace(R.id.container, new EDTFragment()).addToBackStack("retour7").commit();
                 break;
             case section_iut:
                 Intent toIut = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.iut-bm.univ-fcomte.fr/‎"));
@@ -167,7 +166,6 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
             // if the drawer is not showing. Otherwise, let the drawer
             // decide what to show in the action bar.
             getMenuInflater().inflate(R.menu.main, menu);
-            menu.findItem(R.id.action_settings).setChecked(getSharedPreferences("help", 0).getBoolean("aide", true));
             restoreActionBar();
             return true;
         }
@@ -179,22 +177,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        SharedPreferences settings = getSharedPreferences("help", 0);
-        SharedPreferences.Editor editor = settings.edit();
         switch (item.getItemId()) {
-            case R.id.action_settings:
-                if (!item.isChecked()) {
-                    item.setChecked(true);
-                    editor.putBoolean("aide", true);
-                    editor.commit();
-                } else {
-                    item.setChecked(false);
-                    editor.putBoolean("aide", false);
-                    editor.commit();
-                }
-
-                return true;
-
             case R.id.calendar_action:
                 Intent intent = new Intent(this,ConfigEDTActivity.class);
                 startActivity(intent);

@@ -12,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.iutbm.applicationiut.ConfigEDTActivity;
-import com.iutbm.applicationiut.EDTActivity;
 import com.iutbm.applicationiut.R;
 
 /**

@@ -8,6 +8,8 @@
     <string name="calendar_action">Configurer mon emploi du temps</string>
     <string name="config_edt_title">Configuration de votre formation</string>
 
+    <string name="key_fragment">ARG_OBJECT</string>
+
     <string name="app_name">IUT BM</string>
 
     <string-array name="nav_drawer_items">

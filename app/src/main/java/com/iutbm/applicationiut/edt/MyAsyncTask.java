@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.iutbm.applicationiut.R;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -14,41 +16,46 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class MyAsyncTask extends AsyncTask<Integer,Void,Void> {
+public class MyAsyncTask extends AsyncTask<Void,Void,ArrayList<String>> {
 
+    private String url;
+    private String regEx;
+    private String keyIntent;
     private Context context;
 
-    public MyAsyncTask(Context context){
+    public MyAsyncTask(String url, String regEx, String keyIntent, Context context) {
+        this.url = url;
+        this.regEx = regEx;
+        this.keyIntent = keyIntent;
         this.context = context;
     }
 
     @Override
-    protected Void doInBackground(Integer... params) {
+    protected ArrayList<String> doInBackground(Void... params) {
 
-        String id = String.valueOf(params[0]);
-        String semaine = String.valueOf(params[1]);
-
-        String url = "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id="+id+"&jours="+semaine;
-        String regEx = "(\\w{2}\\s\\d+\\s\\w{3}\\s[\\d\\w[-]]+\\s[\\d\\w\\s[/][-][.][']]+[(][\\w\\s[.]]+[-]\\s[\\d\\s\\w[']]+[)])";
+        ArrayList<String> result = new ArrayList<String>();
 
         try {
             Document document = Jsoup.connect(url).get();
             String contener = document.body().text();
-
             Matcher matcher = Pattern.compile(regEx).matcher(contener);
 
-            ArrayList<String> listePlanning = new ArrayList<String>();
-
             while(matcher.find())
-                listePlanning.add(matcher.group(1));
+                result.add(matcher.group(1));
 
-            Sender.sendMessage(this.context, listePlanning);
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return null;
+        return result;
     }
 
+    @Override
+    protected void onPostExecute(ArrayList<String> list) {
+        String keyResult = context.getResources().getString(R.string.key_result);
+        Intent intent = new Intent(keyIntent);
+        intent.putStringArrayListExtra(keyResult,list);
+        context.sendBroadcast(intent);
+    }
 }

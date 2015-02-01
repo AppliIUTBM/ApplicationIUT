@@ -3,25 +3,26 @@ package com.iutbm.applicationiut.edt;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 
-import com.iutbm.applicationiut.EDTActivity;
+
+import com.iutbm.applicationiut.R;
 
 import java.util.ArrayList;
 
 
 public class Receiver extends BroadcastReceiver {
 
-    EDTActivity activity;
+    private RefreshUI uiToRefresh;
 
-    public Receiver(EDTActivity mainActivity){
-        this.activity = mainActivity;
+    public Receiver(RefreshUI uiToRefresh) {
+        this.uiToRefresh = uiToRefresh;
     }
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        ArrayList<String> listPlanning = intent.getStringArrayListExtra(Sender.EXTRA);
-        this.activity.afficherResultat(listPlanning);
+        String keyResult = context.getResources().getString(R.string.key_result);
+        ArrayList<String> result = intent.getStringArrayListExtra(keyResult);
+        uiToRefresh.refreshUI(result);
     }
 
 }

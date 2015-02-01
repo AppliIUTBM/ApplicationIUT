@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_cours"
+    android:background="@drawable/background_text_view"
+    android:padding="@dimen/large_padding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_jour"
+        android:gravity="center"
+        android:textSize="@dimen/title"
+        android:layout_marginBottom="@dimen/large_padding"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

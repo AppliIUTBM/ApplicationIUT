@@ -7,13 +7,10 @@ import android.widget.ExpandableListView;
 
 import com.iutbm.applicationiut.edt.Group;
 import com.iutbm.applicationiut.edt.MyExpandableListAdapter;
-import com.iutbm.applicationiut.edt.MyPlanning;
 
 import java.util.ArrayList;
 
-/**
- * Created by romain on 18/01/2015.
- */
+
 public class ConfigEDTActivity extends Activity {
 
     MyExpandableListAdapter adapter;

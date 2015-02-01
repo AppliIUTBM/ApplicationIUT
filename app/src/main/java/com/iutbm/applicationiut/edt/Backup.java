@@ -7,7 +7,6 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.iutbm.applicationiut.ConfigEDTActivity;
-import com.iutbm.applicationiut.EDTActivity;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -46,9 +45,6 @@ public class Backup {
         int id = this.myPreferences.getInt(KEY_ID,defaultValue);
 
         Log.v("IUT", id+" readed");
-
-        if (id==defaultValue)
-            Toast.makeText(context,"Veuillez choisir votre formation",Toast.LENGTH_LONG).show();
 
         return id;
     }
