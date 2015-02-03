@@ -99,34 +99,43 @@ public class SwitchFragment extends Fragment implements RefreshUI {
 
         int currentNumJour = 0;
 
-        for(Cours cours : planning){
+        if(!planning.isEmpty()){
+            for(Cours cours : planning){
 
-            if(currentNumJour<cours.getNumJour()) {
-                if (currentNumJour != 0) {
-                    llEDT.addView(itemEDT);
+                if(currentNumJour<cours.getNumJour()) {
+                    if (currentNumJour != 0) {
+                        llEDT.addView(itemEDT);
+                    }
+
+                    itemEDT = View.inflate(getActivity(), R.layout.item_edt, null);
+                    llCours = (LinearLayout) itemEDT.findViewById(R.id.ll_cours);
+                    LinearLayout.LayoutParams lls = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                    lls.setMargins(margin,margin,margin,0);
+                    llCours.setLayoutParams(lls);
+                    TextView tvJour = (TextView) itemEDT.findViewById(R.id.tv_jour);
+                    tvJour.setText(cours.getJour() + " " + String.valueOf(cours.getNumJour()) + " " + cours.getMois());
                 }
 
-                itemEDT = View.inflate(getActivity(), R.layout.item_edt, null);
-                llCours = (LinearLayout) itemEDT.findViewById(R.id.ll_cours);
-                LinearLayout.LayoutParams lls = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-                lls.setMargins(margin,margin,margin,0);
-                llCours.setLayoutParams(lls);
-                TextView tvJour = (TextView) itemEDT.findViewById(R.id.tv_jour);
-                tvJour.setText(cours.getJour() + " " + String.valueOf(cours.getNumJour()) + " " + cours.getMois());
+                View subItemEDT = View.inflate(getActivity(),R.layout.sub_item_edt,null);
+                TextView tvHeure = (TextView) subItemEDT.findViewById(R.id.tv_heure);
+                TextView tvCours = (TextView) subItemEDT.findViewById(R.id.tv_cours);
+                tvHeure.setText(cours.gethDebut() + " " + cours.gethFin());
+                tvCours.setText(cours.getLibelle() + " " + cours.getLieu());
+                llCours.addView(subItemEDT);
+
+                currentNumJour = cours.getNumJour();
+
             }
 
-            View subItemEDT = View.inflate(getActivity(),R.layout.sub_item_edt,null);
-            TextView tvHeure = (TextView) subItemEDT.findViewById(R.id.tv_heure);
-            TextView tvCours = (TextView) subItemEDT.findViewById(R.id.tv_cours);
-            tvHeure.setText(cours.gethDebut() + " " + cours.gethFin());
-            tvCours.setText(cours.getLibelle() + " " + cours.getLieu());
-            llCours.addView(subItemEDT);
-
-            currentNumJour = cours.getNumJour();
-
+            llEDT.addView(itemEDT);
+        }
+        else{
+            itemEDT = View.inflate(getActivity(),R.layout.item_edt,null);
+            TextView tvJour = (TextView) itemEDT.findViewById(R.id.tv_jour);
+            tvJour.setText("Vous n'avez pas cours cette semaine");
+            llEDT.addView(itemEDT);
         }
 
-        llEDT.addView(itemEDT);
     }
 
 }
