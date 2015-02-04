@@ -12,7 +12,7 @@
     <string name="app_name">IUT BM</string>
 
 
-    <string name="lbl_IUT_Technhom">IUT Belfort Techn'Hom</string>
+    <string name="lbl_IUT_Technhom">IUT Belfort Techn\'Hom</string>
     <string name="lbl_IUT_CV">IUT Belfort Centre</string>
     <string name="lbl_IUT_Mtb">IUT Montbéliard P. du Jura</string>
     <string name="lbl_arret_optymo">Arrêt de bus Optymo</string>
