@@ -33,9 +33,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.iutbm.applicationiut.EDTActivity"
+            android:name=".EDTActivity"
             android:label="Emploi du temps"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
         </activity>
         <activity
             android:name=".ConfigEDTActivity"

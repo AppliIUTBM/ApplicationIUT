@@ -161,10 +161,16 @@ public class AccueilFragment extends Fragment {
     private View.OnClickListener toEDT = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            FragmentManager fragmentManager = getFragmentManager();
+            /*FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction ft = fragmentManager.beginTransaction();
             ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-            ft.replace(R.id.container, new EDTFragment()).addToBackStack("retour9").commit();
+            ft.replace(R.id.container, new EDTFragment()).addToBackStack("retour9").commit();*/
+            Log.v("IUT","Click");
+            linearLayoutEDT.startAnimation(vanish);
+            Log.v("IUT","Creation de l'intent");
+            Intent myIntent = new Intent(getActivity(),EDTActivity.class);
+            Log.v("IUT","Start intent");
+            startActivity(myIntent);
         }
     };
 

@@ -105,7 +105,8 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
                 ft.replace(R.id.container, new FacebookFragment()).addToBackStack("retour6").commit();
                 break;
             case section_edt:
-                ft.replace(R.id.container, new EDTFragment()).addToBackStack("retour7").commit();
+                Intent intent = new Intent(getApplicationContext(),EDTActivity.class);
+                startActivity(intent);
                 break;
             case section_iut:
                 Intent toIut = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.iut-bm.univ-fcomte.fr/‎"));
