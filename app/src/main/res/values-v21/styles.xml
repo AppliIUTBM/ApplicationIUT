@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppTheme" parent="android:Theme.Material.Light">
-        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="android:colorPrimaryDark">@color/darkPurple</item>
-        <item name="android:colorPrimary">@color/lightPurple</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/lightPurple</item>
+        <item name="android:height">60dp</item>
+    </style>
+
+    <style name="ProgressDialogTheme" parent="android:style/Theme.Dialog">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
     </style>
 </resources>
