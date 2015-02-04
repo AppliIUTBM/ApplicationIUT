@@ -36,7 +36,10 @@ public class EDTActivity extends Activity implements RefreshUI {
     private Receiver receiver;
     private IntentFilter filter;
 
-    private List<Cours> planning;;
+    private List<Cours> planning;
+
+    private int idFormation;
+    private String url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +55,6 @@ public class EDTActivity extends Activity implements RefreshUI {
     @Override
     protected void onResume() {
         super.onResume();
-        llEDT.removeAllViews();
 
         pageNumber = 1;
 
@@ -67,9 +69,9 @@ public class EDTActivity extends Activity implements RefreshUI {
         registerReceiver(receiver, filter);
 
         Backup backup = new Backup(this);
-        int idFormation = backup.readData();
+        idFormation = backup.readData();
 
-        String url = String.format(dataParse[0],idFormation,pageNumber*7);
+        url = String.format(dataParse[0],idFormation,pageNumber*7);
 
         if(idFormation!=0){
             MyAsyncTask asyncTask = new MyAsyncTask(url,regEx,keyIntent,this);
@@ -87,6 +89,7 @@ public class EDTActivity extends Activity implements RefreshUI {
 
     @Override
     public void refreshUI(ArrayList<String> result) {
+        llEDT.removeAllViews();
         planning = new ArrayList<>();
 
         for(String line : result)
@@ -139,14 +142,24 @@ public class EDTActivity extends Activity implements RefreshUI {
     private View.OnClickListener eventSemPrec = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            if(pageNumber*7>7){
+                pageNumber--;
+                url = String.format(dataParse[0],idFormation,pageNumber*7);
+                MyAsyncTask asyncTask = new MyAsyncTask(url,regEx,keyIntent,getApplicationContext());
+                asyncTask.execute();
+            }
+            else
+                Toast.makeText(getApplicationContext(),"Impossible de voir en arrière !",Toast.LENGTH_SHORT).show();
         }
     };
 
     private View.OnClickListener eventSemSuiv = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            pageNumber++;
+            url = String.format(dataParse[0],idFormation,pageNumber*7);
+            MyAsyncTask asyncTask = new MyAsyncTask(url,regEx,keyIntent,getApplicationContext());
+            asyncTask.execute();
         }
     };
 

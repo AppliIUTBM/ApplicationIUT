@@ -30,7 +30,7 @@ public class EcoCampusFragment extends Fragment {
         part4 = (WebView) view.findViewById(R.id.webViewEcoPart4);
 
 
-        String strPart1 = "<html><body bgcolor=\"F1E7C4\">" +
+        String strPart1 = "<html><body>" +
                 "<p align=\"justify\">" +
                 getString(R.string.eco_part1_para1) +
                 "</p><p align=\"justify\">" +
@@ -46,7 +46,7 @@ public class EcoCampusFragment extends Fragment {
                 "</p>" +
                 "</body></html>";
 
-        String strPart2 = "<html><body bgcolor=\"F1E7C4\">" +
+        String strPart2 = "<html><body>" +
                 "<p align=\"justify\">" +
                 getString(R.string.eco_part2_para1) +
                 "</p><p align=\"justify\">" +
@@ -54,7 +54,7 @@ public class EcoCampusFragment extends Fragment {
                 "</p>" +
                 "</body></html>";
 
-        String strPart3 = "<html><body bgcolor=\"F1E7C4\">" +
+        String strPart3 = "<html><body>" +
                 "<p align=\"justify\">" +
                 getString(R.string.eco_part3_para1) +
                 "</p><p align=\"justify\">" +
@@ -64,7 +64,7 @@ public class EcoCampusFragment extends Fragment {
                 "</p>" +
                 "</body></html>";
 
-        String strPart4 = "<html><body bgcolor=\"F1E7C4\">" +
+        String strPart4 = "<html><body>" +
                 "Olivier Prévôt<br>" +
                 "Directeur de l’IUT Belfort-Montbéliard<br>" +
                 "Tél. 03 84 58 77 01<br>" +
