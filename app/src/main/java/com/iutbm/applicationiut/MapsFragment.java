@@ -28,19 +28,19 @@ public class MapsFragment extends MapFragment implements OnMapReadyCallback {
         LatLng coordLP = new LatLng(47.642941,6.839285);
         LatLng coordCV = new LatLng(47.640044,6.857059);
         LatLng coordRT = new LatLng(47.49482,6.802994);
-
         LatLng coordABLP = new LatLng(47.643786,6.840887);
+        LatLng coordABMTB = new LatLng(47.495887, 6.804658);
+
 
         BitmapDescriptor iconIUT = BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET);
         BitmapDescriptor iconBus = BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN);
         BitmapDescriptor iconVelo = BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN);
 
-        String iutLP = "IUT Belfort LP";
-        String iutCV = "IUT Belfort CV";
-        String iutRT = "IUT Montbéliard RT";
-
-        String abOptymo = "Arrêt de bus Optymo";
-        String abCTPM = "Arrêt de bus CTPM";
+        String iutLP = getResources().getString(R.string.lbl_IUT_Technhom);
+        String iutCV = getResources().getString(R.string.lbl_IUT_CV);
+        String iutRT = getResources().getString(R.string.lbl_IUT_Mtb);
+        String abOptymo = getResources().getString(R.string.lbl_arret_optymo);
+        String abCTPM = getResources().getString(R.string.lbl_arret_ctpm);
 
         CameraPosition defaultPosition = new CameraPosition(defaultCoord,11,0.0F,0);
 
@@ -62,5 +62,10 @@ public class MapsFragment extends MapFragment implements OnMapReadyCallback {
                 .position(coordABLP)
                 .title(abOptymo)
                 .icon(iconBus));
+        googleMap.addMarker(new MarkerOptions()
+                .position(coordABMTB)
+                .title(abCTPM)
+                .icon(iconBus));
+
     }
 }

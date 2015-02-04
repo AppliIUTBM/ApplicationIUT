@@ -9,8 +9,15 @@
     <string name="config_edt_title">Configuration de votre formation</string>
 
     <string name="key_fragment">ARG_OBJECT</string>
-
     <string name="app_name">IUT BM</string>
+
+
+    <string name="lbl_IUT_Technhom">IUT Belfort Techn'Hom</string>
+    <string name="lbl_IUT_CV">IUT Belfort Centre</string>
+    <string name="lbl_IUT_Mtb">IUT Montbéliard P. du Jura</string>
+    <string name="lbl_arret_optymo">Arrêt de bus Optymo</string>
+    <string name="lbl_arret_ctpm">Arrêt de bus ctpm</string>
+
 
     <string-array name="nav_drawer_items">
         <item>Accueil</item>
@@ -754,6 +761,8 @@
             (TeProw)
         </item>
     </string-array>
+
+
 
     <string-array name="LPMontbelliard">
         <item>Montbelliard</item>
