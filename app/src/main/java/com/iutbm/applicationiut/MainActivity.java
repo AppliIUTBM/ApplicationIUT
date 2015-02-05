@@ -90,7 +90,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
                 ft.replace(R.id.container, new AccueilFragment()).commit();
                 break;
             case section_actualites:
-                ft.replace(R.id.container, new ActualiteFragment()).addToBackStack("retour2").commit();
+                ft.replace(R.id.container, new ActuTempFragment()).addToBackStack("retour2").commit();
                 break;
             case section_formations:
                 ft.replace(R.id.container, new FormationsFragment()).addToBackStack("retour3").commit();
@@ -99,7 +99,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
                 ft.replace(R.id.container, new EcoCampusFragment()).addToBackStack("retour4").commit();
                 break;
             case section_agenda:
-                ft.replace(R.id.container, new AgendaFragment()).addToBackStack("retour5").commit();
+                ft.replace(R.id.container, new ContactsFragment()).addToBackStack("retour5").commit();
                 break;
             case section_facebook:
                 ft.replace(R.id.container, new FacebookFragment()).addToBackStack("retour6").commit();

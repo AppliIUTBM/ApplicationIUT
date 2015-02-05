@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/libelle"
+        android:textSize="@dimen/size_fonts_contacts"
+        android:textColor="@android:color/white"
+        android:paddingBottom="@dimen/decalage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero"
+        android:gravity="right"
+        android:textSize="@dimen/small_size_fonts_contacts"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail"
+        android:gravity="right"
+        android:textSize="@dimen/small_size_fonts_contacts"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

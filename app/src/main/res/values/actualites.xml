@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="titre0">L\'apprentissage dans le supérieur : MODE D\'EMPLOI</string>
+    <string name="contenu0">Une conférence petit-déjeuner intitulée "L\'apprentissage dans le supérieur : mode d\'emploi" est organisée par la licence professionnelle Marketing et communication des organisations du spectacle, de l\'événementiel et des loisirs (MOSEL), en association avec le CFA Sup de Besançon.</string>
+    <string name="date0">05/02/2015</string>
+
+    <string name="titre1">De l’EHPAD au lycée : expériences de communication originales en réseaux et télécoms</string>
+    <string name="contenu1">Compétences commerciales mais aussi compétences techniques : les étudiants de la licence professionnelle Chargé d’affaires en réseaux et télécommunications (CART) doivent être rigoureux et organisés, mais aussi et surtout doués de fortes qualités relationnelles.</string>
+    <string name="date1">04/02/2015</string>
+
+    <string name="titre2">Des modules d’enseignement libres pour développer plus de compétences</string>
+    <string name="contenu2">L’IUT Belfort-Montbéliard souffle la première bougie de ses modules d\'enseignement libres : modules d’ouverture sur une autre discipline ou de préparation à des choix d’orientation ultérieurs, soit 24 heures de TD et deux crédits ECTS intégrés aux programmes nationaux. Entretien avec Olivier Prévôt, directeur de l’IUT Belfort-Montbéliard, et Bruno Viezzi, directeur adjoint de l’IUT responsable de la formation.</string>
+    <string name="date2">26/01/2015</string>
+
+    <string name="titre3">Améliorer le passage du BAC au DUT</string>
+    <string name="contenu3">Ennseignant de lycées et de l\'IUT Belfort-Montbéliard collaborent pour une meilleure réussite des bacheliers STI2D (science et technologies de l\'industrie et du développement durable) dans leurs études supérieures.</string>
+    <string name="date3">22/01/2015</string>
+</resources>

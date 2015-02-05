@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="libelle">
+        <item>Carrières Sociales</item>
+        <item>Génie Civil - construction durable</item>
+        <item>Génie Electrique et Informatique Industrielle</item>
+        <item>Génie Thermique et Energie </item>
+        <item>Gestion Administrative et Commerciale des Organisations</item>
+        <item>Informatique </item>
+        <item>Mesures Physiques</item>
+        <item>Métiers du Multimédia et de l\'Internet </item>
+        <item>Réseaux et Télécommunications</item>
+        <item>Techniques de Commercialisation</item>
+    </string-array>
+    <string-array name="numero">
+        <item>+33 (0)3 84 58 76 00</item>
+        <item>+33 (0)3 84 58 77 91</item>
+        <item>+33 (0)3 84 58 77 47</item>
+        <item>+33 (0)3 84 58 77 49</item>
+        <item>+33 (0)3 81 99 46 28</item>
+        <item>+33 (0)3 84 58 77 82</item>
+        <item>+33 (0)3 81 99 46 02</item>
+        <item>+33 (0)3 81 99 47 34</item>
+        <item>+33 (0)3 81 99 47 00</item>
+        <item>+33 (0)3 84 58 18 01</item>
+    </string-array>
+    <string-array name="mail">
+        <item>dut-cs-belfort@univ-fcomte.fr</item>
+        <item>dut-gc-belfort@univ-fcomte.fr</item>
+        <item>dut-geii-belfort@univ-fcomte.fr</item>
+        <item>dut-gte-belfort@univ-fcomte.fr</item>
+        <item>dut-gaco-montbeliard@univ-fcomte.fr</item>
+        <item>dut-info-belfort@univ-fcomte.fr</item>
+        <item>dut-mp-montbeliard@univ-fcomte.fr</item>
+        <item>dut-mmi-montbeliard@univ-fcomte.fr</item>
+        <item>dut-rt-montbeliard@univ-fcomte.fr</item>
+        <item>dut-techco-belfort@univ-fcomte.fr</item>
+    </string-array>
+</resources>

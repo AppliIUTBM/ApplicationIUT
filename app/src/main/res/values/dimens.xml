@@ -10,4 +10,12 @@
     <dimen name="small_padding">5dp</dimen>
     <dimen name="radius">5dp</dimen>
     <dimen name="title">20dp</dimen>
+    <dimen name="size_fonts_contacts">25dp</dimen>
+    <dimen name="small_size_fonts_contacts">15dp</dimen>
+    <dimen name="decalage">5dp</dimen>
+    <dimen name="taille_titre">20dp</dimen>
+    <dimen name="taille_date">15dp</dimen>
+    <dimen name="margin_article">20dp</dimen>
+    <dimen name="padding_titre">10dp</dimen>
+    <dimen name="padding_article">5dp</dimen>
 </resources>

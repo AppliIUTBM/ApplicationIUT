@@ -248,7 +248,7 @@ public class AccueilFragment extends Fragment {
                     FragmentManager fragmentManager = getFragmentManager();
                     FragmentTransaction ft = fragmentManager.beginTransaction();
                     ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                    ft.replace(R.id.container, new AgendaFragment()).addToBackStack("retour10").commit();
+                    ft.replace(R.id.container, new ContactsFragment()).addToBackStack("retour10").commit();
                 }
             }, vanish.getDuration());
         }
@@ -265,7 +265,7 @@ public class AccueilFragment extends Fragment {
                     FragmentManager fragmentManager = getFragmentManager();
                     FragmentTransaction ft = fragmentManager.beginTransaction();
                     ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                    ft.replace(R.id.container, new ActualiteFragment()).addToBackStack("retour11").commit();
+                    ft.replace(R.id.container, new ActuTempFragment()).addToBackStack("retour11").commit();
                 }
             }, vanish.getDuration());
 
