@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -16,7 +17,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.bugsense.trace.BugSenseHandler;
-
+import com.iutbm.applicationiut.Constants.MailsConstants;
 
 
 public class MainActivity extends Activity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -27,7 +28,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private final int section_accueil = 0;
     private final int section_edt = 1;
-    private final int section_actualites = 2;
+    private final int section_mails = 2;
     private final int section_ecocampus = 3;
     private final int section_universite = 4;
     private final int section_iut = 5;
@@ -89,8 +90,8 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
             case section_accueil:
                 ft.replace(R.id.container, new AccueilFragment()).commit();
                 break;
-            case section_actualites:
-                ft.replace(R.id.container, new ActuTempFragment()).addToBackStack("retour2").commit();
+            case section_mails:
+                ft.replace(R.id.container, new MailsReceiverFragment()).addToBackStack("retour2").commit();
                 break;
             case section_formations:
                 ft.replace(R.id.container, new FormationsFragment()).addToBackStack("retour3").commit();
@@ -120,38 +121,6 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
 
     }
 
-    public void onSectionAttached(int number) {
-        switch (number) {
-            case 1:
-                mTitle = "Accueil";
-                break;
-            case 2:
-                mTitle = "Actualités";
-                break;
-            case 3:
-                mTitle = "Formations";
-                break;
-            case 4:
-                mTitle = "Eco-Campus";
-                break;
-            case 5:
-                mTitle = "Agenda";
-                break;
-            case 6:
-                mTitle = "Facebook";
-                break;
-            case 7:
-                mTitle = "Twitter";
-                break;
-            case 8:
-                mTitle = "IUT";
-                break;
-            case 9:
-                mTitle = "Université";
-                break;
-        }
-    }
-
     public void restoreActionBar() {
         ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
@@ -178,10 +147,21 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
+        Intent intent;
         switch (item.getItemId()) {
             case R.id.calendar_action:
-                Intent intent = new Intent(this,ConfigEDTActivity.class);
+                intent = new Intent(this,ConfigEDTActivity.class);
                 startActivity(intent);
+                return true;
+            case R.id.action_deconnect:
+                intent = new Intent(MailsConstants.ACTION_STOP_SERVICE);
+                intent.putExtra(MailsConstants.KEY_STOP_SERVICE, true);
+                sendBroadcast(intent);
+                SharedPreferences sharedPref = getSharedPreferences(MailsConstants.KEY_PREFERENCES, Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.clear();
+                editor.commit();
+                Toast.makeText(getApplicationContext(), R.string.disconnected, Toast.LENGTH_SHORT).show();
                 return true;
         }
         return super.onOptionsItemSelected(item);

@@ -18,23 +18,32 @@
     <string name="lbl_arret_optymo">Arrêt de bus Optymo</string>
     <string name="lbl_arret_ctpm">Arrêt de bus ctpm</string>
 
+    <string name="email">Adresse mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="remember">Se souvenir de moi</string>
+    <string name="connection">Se connecter</string>
+    <string name="deconnection">Se déconnecter</string>
+    <string name="connected">Connecté en tant que %1$s</string>
+    <string name="disconnected">Vous avez été déconnecté</string>
+    <string name="not_connected">Erreur de connexion à votre compte</string>
+
 
     <string-array name="nav_drawer_items">
         <item>Accueil</item>
         <item>Emploi du temps</item>
-        <item>Actualités</item>
+        <item>Mails</item>
         <item>Eco-Campus</item>
         <item>UFC</item>
         <item>IUT</item>
         <item>Facebook</item>
         <item>Formations</item>
-        <item>Agenda</item>
+        <item>Annuaire</item>
     </string-array>
 
     <array name="nav_drawer_icons">
         <item>@drawable/ic_accueil</item>
         <item>@drawable/ic_edt</item>
-        <item>@drawable/ic_news</item>
+        <item>@drawable/icon_mail</item>
         <item>@drawable/ic_eco</item>
         <item>@drawable/ic_universite</item>
         <item>@drawable/ic_iut</item>

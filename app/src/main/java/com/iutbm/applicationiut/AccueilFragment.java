@@ -30,7 +30,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class AccueilFragment extends Fragment {
-    private Button buttonActualites;
+    private Button buttonMails;
     private Button buttonFormations;
     private Button buttonEcoCampus;
     private Button buttonAgenda;
@@ -54,7 +54,7 @@ public class AccueilFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_accueil, container, false);
         vanish = AnimationUtils.loadAnimation(this.getActivity(), R.anim.vanish);
-        buttonActualites = (Button) view.findViewById(R.id.buttonActualites);
+        buttonMails = (Button) view.findViewById(R.id.buttonMails);
         buttonFormations = (Button) view.findViewById(R.id.buttonFormations);
         buttonEcoCampus = (Button) view.findViewById(R.id.buttonEcoCampus);
         buttonAgenda = (Button) view.findViewById(R.id.buttonAgenda);
@@ -70,7 +70,7 @@ public class AccueilFragment extends Fragment {
         buttonIUT.setOnClickListener(toIUT);
         buttonUniversite.setOnClickListener(toUniversite);
         buttonAgenda.setOnClickListener(toAgenda);
-        buttonActualites.setOnClickListener(toActualites);
+        buttonMails.setOnClickListener(toMails);
         buttonFacebook.setOnClickListener(toFacebook);
         linearLayoutEDT.setOnClickListener(toEDT);
 
@@ -255,17 +255,17 @@ public class AccueilFragment extends Fragment {
     };
 
 
-    private View.OnClickListener toActualites = new View.OnClickListener() {
+    private View.OnClickListener toMails = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            buttonActualites.startAnimation(vanish);
-            buttonActualites.postDelayed(new Runnable() {
+            buttonMails.startAnimation(vanish);
+            buttonMails.postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     FragmentManager fragmentManager = getFragmentManager();
                     FragmentTransaction ft = fragmentManager.beginTransaction();
                     ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
-                    ft.replace(R.id.container, new ActuTempFragment()).addToBackStack("retour11").commit();
+                    ft.replace(R.id.container, new MailsReceiverFragment()).addToBackStack("retour11").commit();
                 }
             }, vanish.getDuration());
 
