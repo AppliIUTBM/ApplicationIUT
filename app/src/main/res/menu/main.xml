@@ -11,4 +11,9 @@
         android:title="@string/deconnection"
         android:orderInCategory="2"
         android:showAsAction="never"/>
+    <item
+        android:id="@+id/action_show_tuto"
+        android:title="@string/generate_tuto_eduroam"
+        android:orderInCategory="3"
+        android:showAsAction="never"/>
 </menu>

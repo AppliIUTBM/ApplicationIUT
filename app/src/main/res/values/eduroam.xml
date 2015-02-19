@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_eduroam">Configuration du réseau Wi-Fi eduroam</string>
+    <string name="step1">1. Activez le Wi-Fi, puis allez dans Paramètres Wi-Fi</string>
+    <string name="step2">2. Si Eduroam apparaît dans la liste des réseaux, ouvrez-le. Sinon faites Ajouter un réseau Wi-Fi</string>
+    <string name="step3">3. Dans “Méthode EAP” sélectionnez “TTLS”</string>
+    <string name="step4">4. Sélectionnez “PAP” dans le champ “Authentification phase 2”</string>
+    <string name="step5">5. Dans le champ “Identité”, insérez “Votre-Login-LDAP@univ-fcomte.fr”</string>
+    <string name="step6">6. Insérez votre mot de passe dans le champ “Mot de passe”</string>
+</resources>

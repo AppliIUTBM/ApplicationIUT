@@ -7,6 +7,7 @@
     <string name="ptr_last_updated">Actualisée le : %1$s</string>
     <string name="calendar_action">Configurer mon emploi du temps</string>
     <string name="config_edt_title">Configuration de votre formation</string>
+    <string name="generate_tuto_eduroam">Wi-Fi à l\'IUT</string>
 
     <string name="key_fragment">ARG_OBJECT</string>
     <string name="app_name">IUT BM</string>

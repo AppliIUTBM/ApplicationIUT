@@ -5,15 +5,19 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RemoteViews;
 import android.widget.Toast;
 
 import com.bugsense.trace.BugSenseHandler;
@@ -162,6 +166,16 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
                 editor.clear();
                 editor.commit();
                 Toast.makeText(getApplicationContext(), R.string.disconnected, Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.action_show_tuto:
+                Toast.makeText(getApplicationContext(),"Pour plus de facilité, le tutoriel à été générer dans une notification",Toast.LENGTH_LONG).show();
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext());
+                builder.setSmallIcon(R.drawable.wifi);
+                Notification notification = builder.build();
+                RemoteViews contentView = new RemoteViews(getPackageName(), R.layout.notification);
+                notification.bigContentView = contentView;
+                NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+                manager.notify(0, notification);
                 return true;
         }
         return super.onOptionsItemSelected(item);
